@@ -14,14 +14,9 @@ class GhasedakServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-//        $this->app->register(GhasedakApi::class);
-//        $loader = AliasLoader::getInstance();
-//        $loader->alias('Form', '\Collective\Html\FormFacade');
-
         $this->app->bind('Laravel' ,function (){
             return new GhasedakApi();
         });
-
     }
 
     /**
