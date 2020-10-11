@@ -1,6 +1,6 @@
 <?php
 
-namespace Ghasedak\Laravell;
+namespace Ghasedak\Laravel;
 
 use Illuminate\Support\ServiceProvider;
 use Ghasedak\GhasedakApi;

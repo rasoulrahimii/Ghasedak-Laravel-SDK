@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Ghasedak\Laravell;
+namespace Ghasedak\Laravel;
 
 
 use Illuminate\Support\Facades\Facade;
