@@ -56,11 +56,12 @@ composer require ghasedak/laravel
 ```    
  ## usage    
 To use the package, you need an API key. To get that you should have a [Ghasedak](https://ghasedak.io) account. Register and get your API key.
+<br>
 Copy the following variable into your project's `.env` file and change `your_api_key` to the key you have got from your Ghasedak account.
 ```php
 GHASEDAKAPI_KEY=your_api_key
 ```
-Use `GhasedakApi` in your controller or whatever place you want:
+Use `GhasedakApi` on top of your controller or wherever you want:
 ```php
 use Ghasedak\GhasedakApi;
 ```
