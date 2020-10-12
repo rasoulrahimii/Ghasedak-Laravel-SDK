@@ -396,12 +396,12 @@ $api->Verify(
 </tr>  
 </tbody>  
 </table>  
-
+</div>
 <h2 id="example1-fa">نمونه کد</h2>  
 </div>
 
 ```php
-use Ghasedak\GhasedakApi; 
+use Ghasedak\GhasedakApi;
 
 $receptor = "09xxxxxxxxx";
 $type = 1;
