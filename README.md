@@ -3,7 +3,7 @@
 <br />    
 <p align="center">    
   <a href="https://github.com/ghasedakapi/laravel">  
-    <img src="logo.png" alt="Logo" height="200" alt="ghasedak for php">    
+    <img src="ghasedak-logo.png" alt="Logo" height="200" alt="ghasedak for php">    
   </a>    
     
   <h3 align="center">Ghasedak Laravel SDK</h3>    
@@ -163,26 +163,32 @@ Freely distributable under the terms of the [MIT](https://opensource.org/license
     
 <h2 id="install-fa">نصب</h2>  
 <p>ساده‌ترین راه برای نصب این پکیج استفاده از Composer است:</p>    
-    
+</div>
+
 ```sh
 composer require ghasedak/laravel
 ``` 
-
+<div dir="rtl">
 <h2 id="usage-fa"> نحوه استفاده </h2>
   
 <p>برای استفاده از این پکیج می‌بایست API key داشته باشید. جهت دریافت ابتدا در <a href="https://ghasedak.io/">سایت قاصدک</a> ثبت‌نام کنید و از پنل کاربری‌تان API key دریافت کنید.</p>    
 <p>متغیر زیر را درون فایل <code>.env</code> پروژه‌ی خود کپی کرده و به جای <code>your_api_key</code> کلید دریافتی از حساب قاصدک خود را قرار دهید.</p>
-    
+</div>
+
 ```php
 GHASEDAKAPI_KEY=your_api_key
 ```
+<div dir="rtl">
 در بالای کنترلر یا هر جایی از پروژه `GhasedakApi` را استفاده کنید:
+</div>
+
 ```php
 use Ghasedak\GhasedakApi;
 ```
-
+<div dir="rtl">
 <p>سپس به راحتی می‌توانید یک instance از <code>GhasedakApi</code> بسازید و از متد <code>SendSimple</code> برای ارسال پیام متنی استفاده کنید:</p>    
-    
+</div>
+
 ```php 
 $api = new GhasedakApi(env(GHASEDAKAPI_KEY)); 
 $api->SendSimple(    
@@ -192,7 +198,8 @@ $api->SendSimple(
  );
 ```    
 
-:))    
+:))   
+<div dir="rtl"> 
  <h2 id="parameters-fa">پارامترها</h2>  
   
 <div class="table-wrapper"><table>  
@@ -247,7 +254,8 @@ $api->SendSimple(
     
 <h2 id="example-fa">نمونه کد</h2>  
 <p> کد زیر نمونه‌ای از متد ارسال تکی پیامک می‌باشد. لطفا توجه کنید که در صورت نداشتن خط اختصاصی می‌بایست حتما <code>line number</code> را وارد کنید. </p>  
-   
+</div>
+
 ```php
 use Ghasedak\GhasedakApi;
 
@@ -258,10 +266,12 @@ $lineNumber = '3000xxxxx';
 $api = new GhasedakApi(env(GHASEDAKAPI_KEY));
 $api->SendSimple($receptor,$message,$lineNumber);
 ``` 
+<div dir="rtl">
 <h2 id="otp-fa"> رمز عبور یکبار مصرف (OTP)  </h2>  
 <p> رمز عبور یک‌بار مصرف برای اعتبارسنجی از طریق تلفن همراه و یا برای ورود دو مرحله‌ای (2FA) استفاده می‌شود.  </p>  
 <p>با استفاده از متد <code>Verify</code> می‌توانید تا سقف 10 <code>param</code> را ارسال کنید:  </p>  
-  
+</div>
+
 ```php 
 $api->Verify(    
     "09xxxxxxxxx", // receptor   
@@ -272,6 +282,7 @@ $api->Verify(
     "param3"
 );  
  ```   
+<div dir="rtl">
  <h2 id="parameters1-fa">پارامترها</h2>  
    
 <div class="table-wrapper"><table>  
@@ -385,10 +396,10 @@ $api->Verify(
 </tr>  
 </tbody>  
 </table>  
-</div>  
-    
-  <h2 id="example1-fa">نمونه کد</h2>  
-    
+
+<h2 id="example1-fa">نمونه کد</h2>  
+</div>
+
 ```php
 use Ghasedak\GhasedakApi; 
 
@@ -400,6 +411,7 @@ $param1 = '123456';
 $api = new GhasedakApi(env(GHASEDAKAPI_KEY));
 $api->Verify($receptor, $type, $template, $param1);
 ```   
+<div dir="rtl">
 <h2 id="licence-fa">مجوز</h2>  
 <p >این پکیج تحت مجوز <a href="https://opensource.org/licenses/MIT">MIT</a> منتشر شده است.  </p>
 </div>
