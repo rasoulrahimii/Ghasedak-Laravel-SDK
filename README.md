@@ -86,8 +86,6 @@ $api->SendSimple(
  ## Example
  Here is a sample code for sending SMS. Please note that you must specify `line number` if you don't have a dedicated line.    
 ```php
-use Ghasedak\GhasedakApi;
-
 $receptor = '09xxxxxxxxx';
 $message = 'Hello, World!';
 $lineNumber = '3000xxxxx';
@@ -128,8 +126,6 @@ $api->Verify(
     
  ## Example
 ```php
-use Ghasedak\GhasedakApi; 
-
 $receptor = "09xxxxxxxxx";
 $type = 1;
 $template = "my-template";
@@ -180,7 +176,7 @@ composer require ghasedak/laravel
 GHASEDAKAPI_KEY=your_api_key
 ```
 <div dir="rtl">
-در بالای کنترلر یا هر جایی از پروژه `GhasedakApi` را استفاده کنید:
+در بالای کنترلر یا هر جایی از پروژه <code>GhasedakApi</code> را استفاده کنید:
 </div>
 
 ```php
@@ -258,8 +254,6 @@ $api->SendSimple(
 </div>
 
 ```php
-use Ghasedak\GhasedakApi;
-
 $receptor = '09xxxxxxxxx';
 $message = 'Hello, World!';
 $lineNumber = '3000xxxxx';
@@ -402,8 +396,6 @@ $api->Verify(
 </div>
 
 ```php
-use Ghasedak\GhasedakApi;
-
 $receptor = "09xxxxxxxxx";
 $type = 1;
 $template = "my-template";
