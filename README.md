@@ -67,7 +67,7 @@ use Ghasedak\GhasedakApi;
 ```
 Then you can simply create an instance of `GhasedakApi` and use `SendSimple` method to send a text message:
 ```php
-$api = new GhasedakApi(env(GHASEDAKAPI_KEY));
+$api = new GhasedakApi(env('GHASEDAKAPI_KEY'));
 $api->SendSimple(
     "09xxxxxxxxx", // receptor
     "Hello World!", // message 
@@ -90,7 +90,7 @@ $receptor = '09xxxxxxxxx';
 $message = 'Hello, World!';
 $lineNumber = '3000xxxxx';
 
-$api = new GhasedakApi(env(GHASEDAKAPI_KEY));
+$api = new GhasedakApi(env('GHASEDAKAPI_KEY'));
 $api->SendSimple($receptor,$message,$lineNumber);
 ```    
 
@@ -131,7 +131,7 @@ $type = 1;
 $template = "my-template";
 $param1 = '123456';
 
-$api = new GhasedakApi(env(GHASEDAKAPI_KEY));
+$api = new GhasedakApi(env('GHASEDAKAPI_KEY'));
 $api->Verify($receptor, $type, $template, $param1);
 
 ```
@@ -187,7 +187,7 @@ use Ghasedak\GhasedakApi;
 </div>
 
 ```php 
-$api = new GhasedakApi(env(GHASEDAKAPI_KEY)); 
+$api = new GhasedakApi(env('GHASEDAKAPI_KEY')); 
 $api->SendSimple(    
    "09xxxxxxxxx",  // receptor   
    "Hello World!", // message   
@@ -258,7 +258,7 @@ $receptor = '09xxxxxxxxx';
 $message = 'Hello, World!';
 $lineNumber = '3000xxxxx';
 
-$api = new GhasedakApi(env(GHASEDAKAPI_KEY));
+$api = new GhasedakApi(env('GHASEDAKAPI_KEY'));
 $api->SendSimple($receptor,$message,$lineNumber);
 ``` 
 <div dir="rtl">
@@ -401,7 +401,7 @@ $type = 1;
 $template = "my-template";
 $param1 = '123456';
 
-$api = new GhasedakApi(env(GHASEDAKAPI_KEY));
+$api = new GhasedakApi(env('GHASEDAKAPI_KEY'));
 $api->Verify($receptor, $type, $template, $param1);
 ```   
 <div dir="rtl">
